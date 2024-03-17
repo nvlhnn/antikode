@@ -1,0 +1,1847 @@
+{
+	"info": {
+		"_postman_id": "e7dba56d-050a-4aaf-bcb1-1aefbc5fda8f",
+		"name": "antikode",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24180400",
+		"_collection_link": "https://www.postman.com/backend-jarivis/workspace/public-nvlhnn/collection/24180400-e7dba56d-050a-4aaf-bcb1-1aefbc5fda8f?action=share&source=collection_link&creator=24180400"
+	},
+	"item": [
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/brands",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"brands"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/brands",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"brands"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:23:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:23:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"name\": \"Trantow-Tillman\",\n                \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"outlets_count\": 5,\n                \"products_count\": 5,\n                \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Hayes-Hansen\",\n                \"logo\": \"de759d55a11396828341642430d246cc.png\",\n                \"banner\": \"5586de194095f3e1cd668355a302dd58.png\",\n                \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"outlets_count\": 0,\n                \"products_count\": 0,\n                \"logo_url\": \"http://127.0.0.1:8000/storage/brands/de759d55a11396828341642430d246cc.png\",\n                \"banner_url\": \"http://127.0.0.1:8000/storage/brands/5586de194095f3e1cd668355a302dd58.png\"\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Sauer-Klocko\",\n                \"logo\": \"5d96497d0cc8fab3c20ced839f0661e4.png\",\n                \"banner\": \"0ee04ba2767fb2e5b5b5d1c4bb0a1c88.png\",\n                \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                \"outlets_count\": 0,\n                \"products_count\": 0,\n                \"logo_url\": \"http://127.0.0.1:8000/storage/brands/5d96497d0cc8fab3c20ced839f0661e4.png\",\n                \"banner_url\": \"http://127.0.0.1:8000/storage/brands/0ee04ba2767fb2e5b5b5d1c4bb0a1c88.png\"\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/brands?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://127.0.0.1:8000/api/brands\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 3\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/brands/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"brands",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/brands/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"brands",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:22 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"name\": \"Trantow-Tillman\",\n        \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n        \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n        \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n        \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n        \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n        \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\",\n        \"outlets\": [\n            {\n                \"id\": 1,\n                \"brand_id\": 1,\n                \"name\": \"Weber PLC\",\n                \"picture\": \"51cd4509c91fa595d6701d4868eb126d.png\",\n                \"address\": \"8077 Rowe Crossroad Suite 478\\nScottieport, FL 51030-0226\",\n                \"longitude\": \"117.443319\",\n                \"latitude\": \"3.976536\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/51cd4509c91fa595d6701d4868eb126d.png\"\n            },\n            {\n                \"id\": 2,\n                \"brand_id\": 1,\n                \"name\": \"Jacobson, Rice and Tremblay\",\n                \"picture\": \"6ba511a77bcf35b4d62004691e650ccd.png\",\n                \"address\": \"537 Arlie Terrace\\nWest Thora, AZ 30234-8988\",\n                \"longitude\": \"7.646236\",\n                \"latitude\": \"-85.943253\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/6ba511a77bcf35b4d62004691e650ccd.png\"\n            },\n            {\n                \"id\": 3,\n                \"brand_id\": 1,\n                \"name\": \"Hodkiewicz-Farrell\",\n                \"picture\": \"288956c4715969de09227fbd9dd5f0a3.png\",\n                \"address\": \"37298 Maggio Oval Suite 777\\nJenkinsstad, MD 69743\",\n                \"longitude\": \"-130.842918\",\n                \"latitude\": \"-75.948374\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/288956c4715969de09227fbd9dd5f0a3.png\"\n            },\n            {\n                \"id\": 4,\n                \"brand_id\": 1,\n                \"name\": \"Donnelly-Hermann\",\n                \"picture\": \"1a5bfbca39bbedcd00eec023ca00274d.png\",\n                \"address\": \"47091 Paige Estates\\nReillyfort, TX 27217\",\n                \"longitude\": \"-136.250662\",\n                \"latitude\": \"-2.271516\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/1a5bfbca39bbedcd00eec023ca00274d.png\"\n            },\n            {\n                \"id\": 5,\n                \"brand_id\": 1,\n                \"name\": \"Torp LLC\",\n                \"picture\": \"c8de7820837de4abee25160595f2d334.png\",\n                \"address\": \"571 Kristian Falls Suite 449\\nLockmanville, VA 07443\",\n                \"longitude\": \"-158.327728\",\n                \"latitude\": \"-30.733103\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/c8de7820837de4abee25160595f2d334.png\"\n            }\n        ],\n        \"products\": [\n            {\n                \"id\": 1,\n                \"brand_id\": 1,\n                \"name\": \"quia\",\n                \"picture\": \"727fa846ab01e303ac24b5c760165c3a.png\",\n                \"price\": \"38643.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/727fa846ab01e303ac24b5c760165c3a.png\"\n            },\n            {\n                \"id\": 2,\n                \"brand_id\": 1,\n                \"name\": \"ut\",\n                \"picture\": \"dab803b5eb33ede2d3d2e2437bb36752.png\",\n                \"price\": \"7659.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/dab803b5eb33ede2d3d2e2437bb36752.png\"\n            },\n            {\n                \"id\": 3,\n                \"brand_id\": 1,\n                \"name\": \"hic\",\n                \"picture\": \"130f85223affebc838817deec6e607a1.png\",\n                \"price\": \"49713.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/130f85223affebc838817deec6e607a1.png\"\n            },\n            {\n                \"id\": 4,\n                \"brand_id\": 1,\n                \"name\": \"quia\",\n                \"picture\": \"2010a6c48292baaa7b0fabe9be71373c.png\",\n                \"price\": \"9563.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/2010a6c48292baaa7b0fabe9be71373c.png\"\n            },\n            {\n                \"id\": 5,\n                \"brand_id\": 1,\n                \"name\": \"impedit\",\n                \"picture\": \"22c20c7606e99d72b8154b51436b9982.png\",\n                \"price\": \"57827.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/22c20c7606e99d72b8154b51436b9982.png\"\n            }\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "brand",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20240226150917.png"
+								},
+								{
+									"key": "banner",
+									"type": "file",
+									"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20231102171523.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/brands",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"brands"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "brand",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"type": "file",
+											"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20240226150917.png"
+										},
+										{
+											"key": "banner",
+											"type": "file",
+											"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20231102171523.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/brands",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"brands"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:27 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data stored successfully\",\n    \"data\": {\n        \"name\": \"brand\",\n        \"logo\": \"65f68c9b9d011.png\",\n        \"banner\": \"65f68c9ba0f28.png\",\n        \"updated_at\": \"2024-03-17T06:24:27.000000Z\",\n        \"created_at\": \"2024-03-17T06:24:27.000000Z\",\n        \"id\": 4,\n        \"logo_url\": \"http://127.0.0.1:8000/storage/brands/65f68c9b9d011.png\",\n        \"banner_url\": \"http://127.0.0.1:8000/storage/brands/65f68c9ba0f28.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "brand edited",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "logo",
+									"type": "file",
+									"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/freesnippingtool.com_capture_20230519201917.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/brands/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"brands",
+								"3"
+							],
+							"query": [
+								{
+									"key": "_method",
+									"value": "PUT",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "brand edited",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										},
+										{
+											"key": "logo",
+											"type": "file",
+											"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/freesnippingtool.com_capture_20230519201917.png"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/brands/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"brands",
+										"3"
+									],
+									"query": [
+										{
+											"key": "_method",
+											"value": "PUT",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:33 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:24:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data updated successfully\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/brands/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"brands",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/brands/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"brands",
+										"4"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:17:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:17:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Outlet",
+			"item": [
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/outlets?page=1&brand_id=1&order=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"outlets"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "brand_id",
+									"value": "1"
+								},
+								{
+									"key": "order",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/outlets?page=1&brand_id=1&order=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"outlets"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "brand_id",
+											"value": "1"
+										},
+										{
+											"key": "order",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:25:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:25:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"brand_id\": 1,\n                \"name\": \"Weber PLC\",\n                \"picture\": \"51cd4509c91fa595d6701d4868eb126d.png\",\n                \"address\": \"8077 Rowe Crossroad Suite 478\\nScottieport, FL 51030-0226\",\n                \"longitude\": \"117.443319\",\n                \"latitude\": \"3.976536\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"distance\": 1632.058270933344,\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/51cd4509c91fa595d6701d4868eb126d.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"brand_id\": 1,\n                \"name\": \"Jacobson, Rice and Tremblay\",\n                \"picture\": \"6ba511a77bcf35b4d62004691e650ccd.png\",\n                \"address\": \"537 Arlie Terrace\\nWest Thora, AZ 30234-8988\",\n                \"longitude\": \"7.646236\",\n                \"latitude\": \"-85.943253\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"distance\": 9394.466274567332,\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/6ba511a77bcf35b4d62004691e650ccd.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"brand_id\": 1,\n                \"name\": \"Torp LLC\",\n                \"picture\": \"c8de7820837de4abee25160595f2d334.png\",\n                \"address\": \"571 Kristian Falls Suite 449\\nLockmanville, VA 07443\",\n                \"longitude\": \"-158.327728\",\n                \"latitude\": \"-30.733103\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"distance\": 10117.164092317445,\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/c8de7820837de4abee25160595f2d334.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"brand_id\": 1,\n                \"name\": \"Hodkiewicz-Farrell\",\n                \"picture\": \"288956c4715969de09227fbd9dd5f0a3.png\",\n                \"address\": \"37298 Maggio Oval Suite 777\\nJenkinsstad, MD 69743\",\n                \"longitude\": \"-130.842918\",\n                \"latitude\": \"-75.948374\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"distance\": 10165.170749061579,\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/288956c4715969de09227fbd9dd5f0a3.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"brand_id\": 1,\n                \"name\": \"Donnelly-Hermann\",\n                \"picture\": \"1a5bfbca39bbedcd00eec023ca00274d.png\",\n                \"address\": \"47091 Paige Estates\\nReillyfort, TX 27217\",\n                \"longitude\": \"-136.250662\",\n                \"latitude\": \"-2.271516\",\n                \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n                \"distance\": 12949.493129048433,\n                \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/1a5bfbca39bbedcd00eec023ca00274d.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/outlets?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://127.0.0.1:8000/api/outlets\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 5\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/outlets/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"outlets",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/outlets/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"outlets",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:25:07 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:25:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"brand_id\": 1,\n        \"name\": \"Weber PLC\",\n        \"picture\": \"51cd4509c91fa595d6701d4868eb126d.png\",\n        \"address\": \"8077 Rowe Crossroad Suite 478\\nScottieport, FL 51030-0226\",\n        \"longitude\": \"117.443319\",\n        \"latitude\": \"3.976536\",\n        \"created_at\": \"2024-03-17T06:23:16.000000Z\",\n        \"updated_at\": \"2024-03-17T06:23:16.000000Z\",\n        \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/51cd4509c91fa595d6701d4868eb126d.png\",\n        \"brand\": {\n            \"id\": 1,\n            \"name\": \"Trantow-Tillman\",\n            \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n            \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n            \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n            \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n            \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n            \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "olt",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20240226144502.png"
+								},
+								{
+									"key": "address",
+									"value": "jakarta",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.2873442",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "106.7963742",
+									"type": "text"
+								},
+								{
+									"key": "brand_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/outlets",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"outlets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "olt",
+											"type": "text"
+										},
+										{
+											"key": "picture",
+											"type": "file",
+											"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20240226144502.png"
+										},
+										{
+											"key": "address",
+											"value": "jakarta",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "-6.2873442",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "106.7963742",
+											"type": "text"
+										},
+										{
+											"key": "brand_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/outlets",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"outlets"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:04 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data stored successfully\",\n    \"data\": {\n        \"name\": \"olt\",\n        \"brand_id\": \"2\",\n        \"address\": \"jakarta\",\n        \"longitude\": \"106.7963742\",\n        \"latitude\": \"-6.2873442\",\n        \"picture\": \"65f68b944075d.png\",\n        \"updated_at\": \"2024-03-17T06:20:04.000000Z\",\n        \"created_at\": \"2024-03-17T06:20:04.000000Z\",\n        \"id\": 6,\n        \"picture_url\": \"http://127.0.0.1:8000/storage/outlets/65f68b944075d.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "olt edited",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "jogja",
+									"type": "text"
+								},
+								{
+									"key": "latitude",
+									"value": "-6.2449412",
+									"type": "text"
+								},
+								{
+									"key": "longitude",
+									"value": "106.8204497",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/outlets/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"outlets",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "olt edited",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										},
+										{
+											"key": "address",
+											"value": "jogja",
+											"type": "text"
+										},
+										{
+											"key": "latitude",
+											"value": "-6.2449412",
+											"type": "text"
+										},
+										{
+											"key": "longitude",
+											"value": "106.8204497",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/outlets/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"outlets",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:23 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data updated successfully\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/outlets/6",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"outlets",
+								"6"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/outlets/6",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"outlets",
+										"6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:40 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:20:40 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get All",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products?page=1&brand_id=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "brand_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products?page=1&brand_id=1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "brand_id",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:26:55 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:26:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 1,\n                \"brand_id\": 1,\n                \"name\": \"quia\",\n                \"picture\": \"727fa846ab01e303ac24b5c760165c3a.png\",\n                \"price\": \"38643.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/727fa846ab01e303ac24b5c760165c3a.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 2,\n                \"brand_id\": 1,\n                \"name\": \"ut\",\n                \"picture\": \"dab803b5eb33ede2d3d2e2437bb36752.png\",\n                \"price\": \"7659.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/dab803b5eb33ede2d3d2e2437bb36752.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"brand_id\": 1,\n                \"name\": \"hic\",\n                \"picture\": \"130f85223affebc838817deec6e607a1.png\",\n                \"price\": \"49713.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/130f85223affebc838817deec6e607a1.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 4,\n                \"brand_id\": 1,\n                \"name\": \"quia\",\n                \"picture\": \"2010a6c48292baaa7b0fabe9be71373c.png\",\n                \"price\": \"9563.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/2010a6c48292baaa7b0fabe9be71373c.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"brand_id\": 1,\n                \"name\": \"impedit\",\n                \"picture\": \"22c20c7606e99d72b8154b51436b9982.png\",\n                \"price\": \"57827.00\",\n                \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n                \"picture_url\": \"http://127.0.0.1:8000/storage/products/22c20c7606e99d72b8154b51436b9982.png\",\n                \"brand\": {\n                    \"id\": 1,\n                    \"name\": \"Trantow-Tillman\",\n                    \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n                    \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n                    \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n                    \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n                }\n            }\n        ],\n        \"first_page_url\": \"http://127.0.0.1:8000/api/products?page=1\",\n        \"from\": 1,\n        \"next_page_url\": null,\n        \"path\": \"http://127.0.0.1:8000/api/products\",\n        \"per_page\": 10,\n        \"prev_page_url\": null,\n        \"to\": 5\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Get One",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get One",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:27:08 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:27:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data retrieved successfully\",\n    \"data\": {\n        \"id\": 1,\n        \"brand_id\": 1,\n        \"name\": \"quia\",\n        \"picture\": \"727fa846ab01e303ac24b5c760165c3a.png\",\n        \"price\": \"38643.00\",\n        \"created_at\": \"2024-03-17T06:23:22.000000Z\",\n        \"updated_at\": \"2024-03-17T06:23:22.000000Z\",\n        \"picture_url\": \"http://127.0.0.1:8000/storage/products/727fa846ab01e303ac24b5c760165c3a.png\",\n        \"brand\": {\n            \"id\": 1,\n            \"name\": \"Trantow-Tillman\",\n            \"logo\": \"97c24ece11a8c0b78df555c062d36d3f.png\",\n            \"banner\": \"ffdb635c935d5a250b7d619e6d3f20cc.png\",\n            \"created_at\": \"2024-03-17T06:23:11.000000Z\",\n            \"updated_at\": \"2024-03-17T06:23:11.000000Z\",\n            \"logo_url\": \"http://127.0.0.1:8000/storage/brands/97c24ece11a8c0b78df555c062d36d3f.png\",\n            \"banner_url\": \"http://127.0.0.1:8000/storage/brands/ffdb635c935d5a250b7d619e6d3f20cc.png\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "product",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20231130160825.png"
+								},
+								{
+									"key": "brand_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "7000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Store",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "product",
+											"type": "text"
+										},
+										{
+											"key": "picture",
+											"type": "file",
+											"src": "/C:/Users/ACER/OneDrive/Pictures/Snip/capture_20231130160825.png"
+										},
+										{
+											"key": "brand_id",
+											"value": "2",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "7000000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:27:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:27:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data stored successfully\",\n    \"data\": {\n        \"name\": \"product\",\n        \"brand_id\": \"2\",\n        \"price\": \"7000000\",\n        \"picture\": \"65f68d64bf532.png\",\n        \"updated_at\": \"2024-03-17T06:27:48.000000Z\",\n        \"created_at\": \"2024-03-17T06:27:48.000000Z\",\n        \"id\": 6,\n        \"picture_url\": \"http://127.0.0.1:8000/storage/products/65f68d64bf532.png\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "product edited",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "PUT",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "8000000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "product edited",
+											"type": "text"
+										},
+										{
+											"key": "_method",
+											"value": "PUT",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "8000000",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:28:28 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:28:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data updated successfully\",\n    \"data\": null\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/products/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"products",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:28:49 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 17 Mar 2024 06:28:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/7.4.26"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": true,\n    \"message\": \"Data deleted successfully\",\n    \"data\": null\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
